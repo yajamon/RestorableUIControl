@@ -31,6 +31,7 @@ DESC
   s.social_media_url = 'https://twitter.com/yajamon'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'RestorableUIControl/Classes/**/*'
   
