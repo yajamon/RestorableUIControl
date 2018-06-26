@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,10 +21,46 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOL-do-gTc" customClass="RestorableTextField" customModule="RestorableUIControl">
+                                <rect key="frame" x="24" y="28" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="defaultsKey" value="field"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ilU-UK-59R" customClass="RestorableSwitch" customModule="RestorableUIControl">
+                                <rect key="frame" x="24" y="69" width="51" height="31"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="defaultsKey" value="switch"/>
+                                </userDefinedRuntimeAttributes>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95123751300000003" green="0.95123751300000003" blue="0.95123751300000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uOL-do-gTc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="2Ia-43-fEb"/>
+                            <constraint firstItem="ilU-UK-59R" firstAttribute="top" secondItem="uOL-do-gTc" secondAttribute="bottom" constant="11" id="3b9-l3-57g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uOL-do-gTc" secondAttribute="trailing" constant="8" id="7fg-Pf-wiq"/>
+                            <constraint firstItem="uOL-do-gTc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="AV3-KX-7am"/>
+                            <constraint firstItem="ilU-UK-59R" firstAttribute="leading" secondItem="uOL-do-gTc" secondAttribute="leading" id="POB-Jd-d5a"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kqK-aH-Nsc" appends="YES" id="5xY-OG-Rgt"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="mySwitch" destination="ilU-UK-59R" id="vYM-Fb-Gxb"/>
+                        <outlet property="myTextField" destination="uOL-do-gTc" id="S08-Hh-l1J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kqK-aH-Nsc">
+                    <connections>
+                        <action selector="tappedBackground:" destination="vXZ-lx-hvc" id="xjB-Cx-SIj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
