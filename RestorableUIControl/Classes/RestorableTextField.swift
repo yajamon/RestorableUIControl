@@ -7,16 +7,16 @@
 
 import UIKit
 
-class RestorableTextField: UITextField, Restoring {
-    @IBInspectable var defaultsKey: String = ""
+public class RestorableTextField: UITextField, Restoring {
+    @IBInspectable public var defaultsKey: String = ""
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.addTarget(self, action: #selector(saveToUserDefaults(_:)), for: .editingDidEnd)
     }
     
-    @objc func saveToUserDefaults(_ sender:RestorableTextField) {
+    @objc public func saveToUserDefaults(_ sender:RestorableTextField) {
         // print("save to UserDefaults")
         guard defaultsKey != "" else { return }
         UserDefaults.standard.set(sender.text ?? "", forKey: defaultsKey)
@@ -26,7 +26,7 @@ class RestorableTextField: UITextField, Restoring {
         // print("save success")
     }
     
-    func restoreByUserDefaults() {
+    public func restoreByUserDefaults() {
         guard defaultsKey != "" else { return }
         guard let text = UserDefaults.standard.string(forKey: defaultsKey) else { return }
         guard text != "" else { return }

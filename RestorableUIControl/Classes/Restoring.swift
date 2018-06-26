@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Restoring {
+public protocol Restoring {
     var defaultsKey: String {get set}
     
     func saveToUserDefaults(_ sender:Self)
