@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class RestorableTextField: UITextField, Restoring {
+public class RestorableTextField: UITextField, RestoringInternal {
     @IBInspectable public var defaultsKey: String = ""
     
     required public init?(coder aDecoder: NSCoder) {
@@ -16,7 +16,7 @@ public class RestorableTextField: UITextField, Restoring {
         self.addTarget(self, action: #selector(saveToUserDefaults(_:)), for: .editingDidEnd)
     }
     
-    @objc public func saveToUserDefaults(_ sender:RestorableTextField) {
+    @objc func saveToUserDefaults(_ sender:RestorableTextField) {
         // print("save to UserDefaults")
         guard defaultsKey != "" else { return }
         UserDefaults.standard.set(sender.text ?? "", forKey: defaultsKey)

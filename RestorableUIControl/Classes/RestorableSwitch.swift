@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class RestorableSwitch: UISwitch, Restoring {
+public class RestorableSwitch: UISwitch, RestoringInternal {
     @IBInspectable public var defaultsKey: String = ""
     
     required public init?(coder aDecoder: NSCoder) {
@@ -16,7 +16,7 @@ public class RestorableSwitch: UISwitch, Restoring {
         self.addTarget(self, action: #selector(saveToUserDefaults(_:)), for: .valueChanged)
     }
     
-    @objc public func saveToUserDefaults(_ sender:RestorableSwitch) {
+    @objc func saveToUserDefaults(_ sender:RestorableSwitch) {
         // print("save to UserDefaults")
         guard defaultsKey != "" else { return }
         UserDefaults.standard.set(sender.isOn, forKey: defaultsKey)

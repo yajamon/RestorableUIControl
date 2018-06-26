@@ -10,6 +10,9 @@ import Foundation
 public protocol Restoring {
     var defaultsKey: String {get set}
     
-    func saveToUserDefaults(_ sender:Self)
     func restoreByUserDefaults()
+}
+
+protocol RestoringInternal : Restoring {
+    func saveToUserDefaults(_ sender:Self)
 }
