@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		0CD2746CFA3EF07368042E1C /* Pods_RestorableUIControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestorableUIControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0E3BBDA228981F25D24185 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2F0E3BBDA228981F25D24185 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3D762BD266C2CB64D955668E /* Pods-RestorableUIControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestorableUIControl_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestorableUIControl_Tests/Pods-RestorableUIControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		42ED2F620356800ABD17DABA /* Pods-RestorableUIControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestorableUIControl_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestorableUIControl_Tests/Pods-RestorableUIControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4E7C11E571E9457D383F020B /* RestorableUIControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RestorableUIControl.podspec; path = ../RestorableUIControl.podspec; sourceTree = "<group>"; };
+		4E7C11E571E9457D383F020B /* RestorableUIControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RestorableUIControl.podspec; path = ../RestorableUIControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5DE231867765FE4EB55F751B /* Pods_RestorableUIControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestorableUIControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* RestorableUIControl_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestorableUIControl_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		650EC311C0B6115891E77FDF /* Pods-RestorableUIControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestorableUIControl_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestorableUIControl_Example/Pods-RestorableUIControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		981D1F227DEBC521A6FC419B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		981D1F227DEBC521A6FC419B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ED1FAA0A87972FE778BEB4D4 /* Pods-RestorableUIControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestorableUIControl_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestorableUIControl_Example/Pods-RestorableUIControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
