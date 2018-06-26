@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class RestorableSwitch: UISwitch, RestoringInternal {
+open class RestorableSwitch: UISwitch, RestoringInternal {
     @IBInspectable public var defaultsKey: String = ""
     
     required public init?(coder aDecoder: NSCoder) {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class RestorableTextField: UITextField, RestoringInternal {
+open class RestorableTextField: UITextField, RestoringInternal {
     @IBInspectable public var defaultsKey: String = ""
     
     required public init?(coder aDecoder: NSCoder) {
